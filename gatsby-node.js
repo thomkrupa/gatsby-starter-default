@@ -5,3 +5,15 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        react: `preact/compat`,
+        "react-dom": `preact/compat`,
+        "react-dom/server": `preact/compat`,
+      },
+    },
+  })
+}
