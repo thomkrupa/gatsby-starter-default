@@ -7981,9 +7981,9 @@ potrace@^2.1.2:
   dependencies:
     jimp "^0.6.4"
 
-preact@^10.0.0-rc.2:
-  version "10.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.0.0-rc.2.tgz#267d0bc2529792bb7c8802fb5a9401ac4fdeb53f"
+preact@^10.0.0-rc.3:
+  version "10.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.0.0-rc.3.tgz#258d1bbf11744e0460b8681422cd6a0c18200df7"
 
 prebuild-install@^5.3.0:
   version "5.3.1"
