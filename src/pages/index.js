@@ -28,7 +28,12 @@ export const query = graphql`
           id
           name
           childImageSharp {
-            gatsbyImageData(maxWidth: 800)
+            gatsbyImageData(
+              maxWidth: 800
+              quality: 80
+              tracedSVGOptions: { color: "#0b0112" }
+              placeholder: TRACED_SVG
+            )
           }
         }
       }
