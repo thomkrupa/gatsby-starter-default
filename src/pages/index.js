@@ -1,18 +1,18 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
+    <Link to="/page-2">Go to page 2</Link>
     {data.allFile.edges.map(({ node }) => (
       <div key={node.id}>
-        <GatsbyImage image={getImage(node)} alt="my gatsby image" />
+        <GatsbyImage image={getImage(node)} alt={node.name} />
       </div>
     ))}
   </Layout>
